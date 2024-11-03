@@ -35,8 +35,8 @@ function getEmployees(list) {
   return Array.from(list.children).map((item) => ({
     name: item.innerText,
     position: item.getAttribute('data-position'),
-    salary: parseSalary(item.getAttribute('data-position')),
-    age: parseInt(item.getAttribute('data-position')),
+    salary: parseSalary(item.getAttribute('data-salary')),
+    age: parseInt(item.getAttribute('data-age')),
   }));
 }
 
